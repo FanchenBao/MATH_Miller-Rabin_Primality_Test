@@ -1,3 +1,10 @@
+/*
+ * MillerRabin.h
+ *
+ *  Created on: Sep 22, 2018
+ *      Author: fanchen
+ */
+
 #ifndef MILLER_RABIN_H
 #define MILLER_RABIN_H
 
@@ -11,9 +18,9 @@ class MillerRabin{
 
 public:
 	// construtor
-	// Precondition: a static C-style int array and its size are passed to the function
+	// Precondition: a static C-style int array containing test cases and the number of test cases are passed to the function
 	// Postcondition: the values in the array added to the testCases vector.
-	// Description: use this function to add individual test cases to the object
+	// Description: initialize test cases in the class
 	MillerRabin(int* tests, int size);
 
 	// Precondition: three unsigned long long variables passed to the function.
