@@ -32,7 +32,7 @@ unsigned long long MillerRabin::expoMod(unsigned long long base, int expo, unsig
 bool MillerRabin::millerRabinTest(int testCase, int d, int r, unsigned long long n){
 	// Miller-Rabin test for each test case
 	unsigned long long x = expoMod(static_cast<unsigned long long>(testCase), d, n); // x stores the initial result of a[i]^d mod n
-	if (x == 1 or x == n - 1) // current test case a[i] indicates n might be prime. Go for the next test case
+	if (x == 1 || x == n - 1) // current test case a[i] indicates n might be prime. Go for the next test case
 		return true;
 	else{
 		for (int j = 1; j <= r - 1; j++){ // check (a[i]^d)^2^j) mod n.
